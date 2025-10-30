@@ -14,13 +14,17 @@
                 <li><a href="index.html">🏠 Início</a></li>
                 <li><a href="livros.html">📚 Livros</a></li>
                 <li><a href="cidades.html">🏛️ Cidades</a></li>
+                <li><a href="filmes.html">🎬 Filmes & Séries</a></li>
+                <li><a href="jogos.html">🎮 Jogos</a></li>
+                <li><a href="quiz.html">❓ Quiz</a></li>
+                <li><a href="favoritos.html">❤️ Favoritos</a></li>
             </ul>
         </nav>
     </header>
     <main>
         <section id="inicio">
             <div class="halloween-banner">
-                <h2>🎃Bem-vindo ao HallowTales🎃</h2>
+                <h2>🎃Bem-vindo ao HallowTale🎃</h2>
                 <p class="subtitle">Especial Halloween 2025</p>
             </div>
             <p>Este é um lugar para os amantes de histórias de terror e mistérios urbanos. Explore lendas assustadoras de cidades ao redor do mundo e mergulhe nos resumos dos livros de terror mais aclamados.</p>
@@ -38,10 +42,80 @@
                     <p>Viaje por cidades ao redor do mundo e conheça suas histórias reais, lendas de terror e fatos curiosos que vão arrepiar sua espinha.</p>
                     <a href="cidades.html" class="btn-navegacao">Visitar Cidades</a>
                 </div>
-            </div>
 
-            <!-- Seção de Filmes Old School -->
-            <div class="filmes-section">
+                <div class="intro-card">
+                    <h3>🎬 Filmes & Séries</h3>
+                    <p>Explore uma coleção completa de filmes e séries de terror. Dos clássicos que definiram o gênero aos modernos que renovaram o medo.</p>
+                    <a href="filmes.html" class="btn-navegacao">Ver Filmes & Séries</a>
+                </div>
+
+                <div class="intro-card">
+                    <h3>🎮 Jogos de Terror</h3>
+                    <p>Os jogos que vão fazer você ter medo de jogar sozinho no escuro. Survival horror, terror psicológico e muito mais.</p>
+                    <a href="jogos.html" class="btn-navegacao">Explorar Jogos</a>
+                </div>
+
+                <div class="intro-card">
+                    <h3>❓ Quiz de Terror</h3>
+                    <p>Descubra qual filme de terror você deveria assistir! Responda às perguntas e receba uma recomendação personalizada.</p>
+                    <a href="quiz.html" class="btn-navegacao">Fazer Quiz</a>
+                </div>
+
+                <div class="intro-card">
+                    <h3>❤️ Meus Favoritos</h3>
+                    <p>Salve seus filmes, séries, jogos e livros favoritos em um só lugar. Crie sua coleção pessoal de terror!</p>
+                    <a href="favoritos.html" class="btn-navegacao">Ver Favoritos</a>
+                </div>
+            </div>
+            
+            <div class="aviso">
+                <p>⚠️ <em>Atenção: O conteúdo deste site pode conter descrições de terror intenso. Recomendado para maiores de 16 anos.</em></p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-decoration">🕷️ 🕸️ 🦇 🎃 🦇 🕸️ 🕷️</div>
+        <p>&copy; 2025 HallowTales. Todos os direitos reservados.</p>
+        <p class="footer-message">👻 Feliz Halloween! Que seus pesadelos sejam aterrorizantes! 👻</p>
+    </footer>
+    <script src="js/script.js"></script>
+    
+    <!-- Adicionar elementos flutuantes de Halloween -->
+    <script>
+        // Cria fantasmas flutuantes
+        function criarFantasmas() {
+            const fantasmas = ['👻', '🦇', '🕷️'];
+            for (let i = 0; i < 5; i++) {
+                const ghost = document.createElement('div');
+                ghost.className = 'ghost-float';
+                ghost.textContent = fantasmas[Math.floor(Math.random() * fantasmas.length)];
+                ghost.style.left = Math.random() * 100 + '%';
+                ghost.style.animationDelay = Math.random() * 10 + 's';
+                ghost.style.animationDuration = (15 + Math.random() * 10) + 's';
+                document.body.appendChild(ghost);
+            }
+        }
+
+        // Cria olhos piscando
+        function criarOlhos() {
+            for (let i = 0; i < 3; i++) {
+                const eyes = document.createElement('div');
+                eyes.className = 'spooky-eyes';
+                eyes.textContent = '👀';
+                eyes.style.left = Math.random() * 90 + '%';
+                eyes.style.top = Math.random() * 80 + '%';
+                eyes.style.animationDelay = Math.random() * 5 + 's';
+                document.body.appendChild(eyes);
+            }
+        }
+
+        document.addEventListener('DOMContentLoaded', () => {
+            criarFantasmas();
+            criarOlhos();
+        });
+    </script>
+</body>
+</html>
                 <h2>🎬 Filmes Clássicos de Halloween</h2>
                 <p class="secao-descricao">Os filmes old school que definiram o gênero de terror e continuam assustando gerações</p>
                 <div class="filmes-grid">
@@ -108,16 +182,16 @@
                 </div>
             </div>
 
-            <!-- Seção de Filmes Modernos -->
+            <!-- Seção de Recomendações de Filmes de Terror -->
             <div class="filmes-section">
-                <h2>🎃 Filmes Modernos de Terror/Halloween</h2>
-                <p class="secao-descricao">Os melhores filmes de terror contemporâneos que estão definindo o horror para uma nova geração</p>
+                <h2>🎃 Filmes de Terror Recomendados</h2>
+                <p class="secao-descricao">Uma seleção dos melhores filmes de terror de todas as épocas - dos clássicos imortais aos modernos perturbadores</p>
                 <div class="filmes-grid">
                     <div class="filme-card">
                         <div class="filme-numero">1</div>
-                        <h4>Hereditário (2018)</h4>
-                        <p><strong>Diretor:</strong> Ari Aster</p>
-                        <p>Uma família assombrada por segredos sombrios e rituais ocultos após a morte da matriarca. Terror psicológico perturbador e devastador.</p>
+                        <h4>O Exorcista (1973)</h4>
+                        <p><strong>Diretor:</strong> William Friedkin</p>
+                        <p>Uma menina possuída por uma entidade demoníaca e dois padres que tentam salvá-la. Considerado o filme de terror mais assustador de todos os tempos.</p>
                     </div>
                     <div class="filme-card">
                         <div class="filme-numero">2</div>
@@ -127,51 +201,51 @@
                     </div>
                     <div class="filme-card">
                         <div class="filme-numero">3</div>
-                        <h4>A Bruxa (2015)</h4>
-                        <p><strong>Diretor:</strong> Robert Eggers</p>
-                        <p>Na Nova Inglaterra do século XVII, uma família puritana é assombrada por forças sobrenaturais na floresta. Atmosfera opressiva e autêntica.</p>
+                        <h4>O Iluminado (1980)</h4>
+                        <p><strong>Diretor:</strong> Stanley Kubrick</p>
+                        <p>Um escritor aceita trabalhar como zelador de um hotel isolado no inverno e enlouquece lentamente. Obra-prima do terror psicológico.</p>
                     </div>
                     <div class="filme-card">
                         <div class="filme-numero">4</div>
+                        <h4>Hereditário (2018)</h4>
+                        <p><strong>Diretor:</strong> Ari Aster</p>
+                        <p>Uma família assombrada por segredos sombrios e rituais ocultos após a morte da matriarca. Terror psicológico perturbador e devastador.</p>
+                    </div>
+                    <div class="filme-card">
+                        <div class="filme-numero">5</div>
+                        <h4>Psicose (1960)</h4>
+                        <p><strong>Diretor:</strong> Alfred Hitchcock</p>
+                        <p>Uma secretária em fuga encontra abrigo em um motel isolado gerido por Norman Bates. Revolucionou o gênero de suspense e terror.</p>
+                    </div>
+                    <div class="filme-card">
+                        <div class="filme-numero">6</div>
+                        <h4>A Bruxa de Blair (1999)</h4>
+                        <p><strong>Diretor:</strong> Daniel Myrick, Eduardo Sánchez</p>
+                        <p>Três estudantes desaparecem investigando a lenda da Bruxa de Blair. Fundou o gênero found footage e aterrorizou uma geração.</p>
+                    </div>
+                    <div class="filme-card">
+                        <div class="filme-numero">7</div>
                         <h4>Invocação do Mal (2013)</h4>
                         <p><strong>Diretor:</strong> James Wan</p>
                         <p>Paranormais Ed e Lorraine Warren investigam atividades demoníacas em uma fazenda. Baseado em casos reais, mestria em jump scares.</p>
                     </div>
                     <div class="filme-card">
-                        <div class="filme-numero">5</div>
-                        <h4>Midsommar (2019)</h4>
-                        <p><strong>Diretor:</strong> Ari Aster</p>
-                        <p>Um grupo de amigos viaja para um festival de verão na Suécia que acontece a cada 90 anos, mas descobrem rituais perturbadores em um culto pagão.</p>
-                    </div>
-                    <div class="filme-card">
-                        <div class="filme-numero">6</div>
-                        <h4>It: A Coisa (2017)</h4>
-                        <p><strong>Diretor:</strong> Andy Muschietti</p>
-                        <p>Sete crianças enfrentam seus medos e um palhaço assassino que aterroriza sua cidade. Adaptação moderna do clássico de Stephen King.</p>
-                    </div>
-                    <div class="filme-card">
-                        <div class="filme-numero">7</div>
-                        <h4>Um Lugar Silencioso (2018)</h4>
-                        <p><strong>Diretor:</strong> John Krasinski</p>
-                        <p>Uma família sobrevive em silêncio absoluto enquanto criaturas alienígenas caçam pelo som. Tensão constante e inovador uso do silêncio.</p>
-                    </div>
-                    <div class="filme-card">
                         <div class="filme-numero">8</div>
-                        <h4>Babadook (2014)</h4>
-                        <p><strong>Diretor:</strong> Jennifer Kent</p>
-                        <p>Uma mãe viúva e seu filho são aterrorizados por uma criatura de um livro infantil sinistro. Metáfora poderosa sobre luto e depressão.</p>
+                        <h4>Alien: O 8º Passageiro (1979)</h4>
+                        <p><strong>Diretor:</strong> Ridley Scott</p>
+                        <p>A tripulação de uma nave espacial enfrenta uma criatura alienígena mortal. Fusão perfeita de terror e ficção científica.</p>
                     </div>
                     <div class="filme-card">
                         <div class="filme-numero">9</div>
-                        <h4>Nós (2019)</h4>
-                        <p><strong>Diretor:</strong> Jordan Peele</p>
-                        <p>Uma família é aterrorizada por versões sinistras de si mesmos. Terror psicológico com camadas de significado e crítica social.</p>
+                        <h4>A Bruxa (2015)</h4>
+                        <p><strong>Diretor:</strong> Robert Eggers</p>
+                        <p>Na Nova Inglaterra do século XVII, uma família puritana é assombrada por forças sobrenaturais na floresta. Atmosfera opressiva e autêntica.</p>
                     </div>
                     <div class="filme-card">
                         <div class="filme-numero">10</div>
-                        <h4>A Morte te Dá Parabéns (2017)</h4>
-                        <p><strong>Diretor:</strong> Christopher Landon</p>
-                        <p>Uma universitária revive o dia de seu assassinato repetidamente até descobrir a identidade do assassino. Terror com loop temporal criativo.</p>
+                        <h4>O Massacre da Serra Elétrica (1974)</h4>
+                        <p><strong>Diretor:</strong> Tobe Hooper</p>
+                        <p>Jovens encontram uma família de canibais no Texas. Brutal, perturbador e influente. Definiu o slasher moderno com Leatherface.</p>
                     </div>
                 </div>
             </div>
